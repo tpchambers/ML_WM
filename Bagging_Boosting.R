@@ -109,5 +109,3 @@ bag.hitters = randomForest(Salary~.,data=hitters,subset=partition,mtry=19,import
 yhat.bag <-predict(bag.hitters,newdata=hitters.test)
 mean((yhat.bag-hitters.test$Salary)^2)
 
-#Exercise 11 
-
