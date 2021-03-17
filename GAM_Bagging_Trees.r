@@ -35,19 +35,6 @@ train.indices.stats <- sample(nrow(stats), nrow(stats) * .8)
 stats.train <- stats[train.indices.stats, ]
 stats.test <- stats[-train.indices.stats, ]
 
-# Note: There are no NA's in these dataframes, so parameters
-# like usesurrogate, maxsurrogate and na.action are not
-# needed.
-
-#Try your best, even if you cannot get your code to run without error
-# You will always receive partial credit if you provide your best answer
-
-# The exam is open book and open access
-# You can use the Internet to look up documentation and notes
-# However, you cannot use the Internet to communicate with other people
-###################################################
-####  QUESTION 1: Random Forest and Boosting   ####
-####                55 points                  ####
 ###################################################
 set.seed(5082)
 # (1) Construct a random forest of 500 trees with mtry set to 4
@@ -176,15 +163,6 @@ summary(Boosting)
 #with a slow learning rate which is supposed to produce better results
 #compared to RF
 
-###################################################
-####    QUESTION 2: Generalized Additive Models ###
-####                 45 points                  ###
-###################################################
-#
-# Note that the gam() function and associated predict()
-# function often produce warning messages about convergence,
-# extrapolation, eval and upper limit. For our purposes,
-# these can be ignored.
 #
 # (1) Create a gam to predict salary as a function of crbi,
 # catbat and chmrun. 
